@@ -15,3 +15,7 @@ Check out the file `raster_grid.py` and follow the instructions given in the com
 
 Check out the file `plot_over_line.py` and follow the instructions given in the comment at the top.
 
+
+## Exercise 3: `plot_2d`
+
+No special instructions here, simply clean up the code in the file `plot_2d.py`
