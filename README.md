@@ -23,3 +23,7 @@ No special instructions here, simply clean up the code in the file `plot_2d.py`
 ## Bonus Task
 
 Enrich all classes and public methods with documentation.
+
+## License
+
+See `License` file.
