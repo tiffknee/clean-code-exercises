@@ -9,7 +9,7 @@ class Point:
     y: float
 
 
-class Discretization:
+class SquareLattice:
     def __init__(self,
                  lower_left: Point,
                  size: List[float],
@@ -49,9 +49,9 @@ def initialize(p0: Point,
     resolution[1] = 25
 
 
-def plot(discretization: Discretization) -> None:
+def plot(lattice: SquareLattice) -> None:
     x, y, z = [], [], []
-    for p in discretization.points():
+    for p in lattice.points():
         x.append(p.x)
         y.append(p.y)
         z.append(evaluate_field(p))
@@ -68,6 +68,5 @@ if __name__ == "__main__":
     size = [0.0, 0.0]
     resolution = [0, 0]
     initialize(p0, size, resolution)
-    discretization = Discretization(p0, size, resolution)
-    plot(discretization)
-
+    lattice = SquareLattice(p0, size, resolution)
+    plot(lattice)
